@@ -1,18 +1,10 @@
-import { Link, routes } from '@redwoodjs/router'
-
+import MainLayout from 'src/layouts/MainLayout'
 const IndexPage = () => {
   return (
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to={routes.about()}>About</Link>
-          </li>
-        </ul>
-      </nav>
+    <MainLayout>
       <h1>IndexPage</h1>
       <p>hello egghead</p>
-    </div>
+    </MainLayout>
   )
 }
 
